@@ -1,0 +1,63 @@
+.header{
+    padding: 20px;
+    height: 100vh;
+    background-image :url(Ms\ dhoni\ 2.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  .header h1{
+    margin: 0%;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 100px;
+  }
+
+  .Ul1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Ul1 li {
+  list-style: none;
+}
+
+.Ul1 li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.875em;
+  text-decoration: none;
+  padding: 1em;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.Ul1 li a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.timeline.Ul2 li :nth-child(odd) div{
+  left: 45px;
+  transform: translate3d(200px,0,0);
+}
+
+.timeline.Ul2 li:nth-child(even)div{
+  left: -439px;
+  transform: translate3d(-200px,0,0);
+}
+
+.timeline.Ul2 li div{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline.Ul2 li.in-view div{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
